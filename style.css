@@ -1,0 +1,136 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ---------------------hero-section--------------*/
+.nav-bar{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.hero-section {
+    position: relative;
+}
+
+.slid-show {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.slid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    animation: slide-animation 3s infinite;
+}
+
+
+@keyframes slid-animation {
+   0%{
+    background: url(https://www.tooplate.com/templates/2137_barista_cafe/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg);
+   }
+   25%{
+    background: url(https://www.tooplate.com/templates/2137_barista_cafe/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
+   }
+   50%{
+    background: url(https://plus.unsplash.com/premium_photo-1661609291595-3a849ea67002?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVvcGxlJTIwY2FmZXxlbnwwfHwwfHx8MA%3D%3D);
+   }
+   75%{
+    background: url(https://www.tooplate.com/templates/2137_barista_cafe/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg);
+   }
+   100%{
+    background: url(https://www.tooplate.com/templates/2137_barista_cafe/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
+   }
+}
+
+.hero-content {
+    text-align: center;
+    position: relative;
+}
+
+.hero-content::after {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 340px;
+    pointer-events: none;
+    z-index: -1;
+    transform: rotate(47deg);
+    top: 266px;
+    left: 465px;
+}
+
+.hero-welcome {
+    color: #dda15e;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 100;
+    position: relative;
+    top: 300px;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 62px;
+    position: relative;
+    top: 300px;
+    margin-bottom: 8px;
+}
+
+.hero-description {
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    top: 300px;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+
+.hero-btn-1 {
+    background: transparent;
+    color: #fff;
+    position: relative;
+    top: 300px;
+    margin-bottom: 8px;
+    padding: 8px 14px;
+    border-radius: 1000px;
+    font-weight: 600;
+    font-size: 15.5px;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-btn-1:hover {
+    background-color: #fff;
+    color: #dda15e;
+}
+
+.hero-btn-2 {
+    background: #b4752c;
+    color: #fff;
+    position: relative;
+    top: 300px;
+    margin-bottom: 8px;
+    padding: 8px 14px;
+    border-radius: 1000px;
+    font-weight: 600;
+    font-size: 15.5px;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-btn-2:hover {
+    background-color: #dda15e;
+}
