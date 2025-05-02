@@ -1,136 +1,416 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
 
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
 
-/* ---------------------hero-section--------------*/
-.nav-bar{
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.hero-section {
-    position: relative;
-}
+    /* ---------------------nav-bar-start--------------*/
+    .nav-bar {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+    }
 
-.slid-show {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-}
+    .nav-container {
+        margin: 15px 100px;
+        background: transparent;
+    }
 
-.slid {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-    animation: slide-animation 3s infinite;
-}
+    .nav-background {
+        background: rgba(0, 0, 0, 0.35);
+        border-radius: 20px;
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    .nav-brand {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .nav-logo-img {
+        width: 48px;
+        height: auto;
+        margin-right: 10px;
+        filter: brightness(0) invert(1);
+    }
+
+    .cafe-name {
+        font-size: 28px;
+        font-weight: 700;
+        color: #fff;
+        position: relative;
+    }
+
+    .nav-right {
+        display: flex;
+    }
+
+    .nav-items {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #DDA15E;
+    }
+
+    .nav-btn {
+        padding: 10px 15px;
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        margin-left: 16px;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 1000px;
+        height: auto;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+
+    .nav-btn:hover {
+        background-color: #fff;
+        border: 2px solid #DDA15E;
+        color: #DDA15E;
+    }
+
+    .nav-btn-icon {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+    }
+
+    .nav-btn-icon path {
+        fill: #fff;
+        transition: fill 0.3s ease;
+    }
+
+    .nav-btn:hover .nav-btn-icon path {
+        fill: #DDA15E;
+    }
+
+    .three-line {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* -------------------nav-bar-end------------*/
+    /* ------------------hero-section--------------*/
+    .hero-section {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        height: 100dvh;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .over {
+        max-width: 100vw;
+        overflow: hidden;
+    }
+
+    .slid-animation {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        animation: slid-change 15s ease-out infinite;
+        z-index: -2;
+    }
+
+    @keyframes slid-change {
+        0% {
+            background: url(2335.jpg);
+            transform: scale(1.2);
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            object-fit: cover;
+        }
+
+        20% {
+            background: url(2335.jpg);
+            transform: scale(1);
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            object-fit: cover;
+        }
 
 
-@keyframes slid-animation {
-   0%{
-    background: url(https://www.tooplate.com/templates/2137_barista_cafe/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg);
-   }
-   25%{
-    background: url(https://www.tooplate.com/templates/2137_barista_cafe/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
-   }
-   50%{
-    background: url(https://plus.unsplash.com/premium_photo-1661609291595-3a849ea67002?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVvcGxlJTIwY2FmZXxlbnwwfHwwfHx8MA%3D%3D);
-   }
-   75%{
-    background: url(https://www.tooplate.com/templates/2137_barista_cafe/images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg);
-   }
-   100%{
-    background: url(https://www.tooplate.com/templates/2137_barista_cafe/images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
-   }
-}
+        50% {
+            background: url(3973.jpg);
+            transform: scale(1.2);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            object-fit: cover;
+        }
 
-.hero-content {
-    text-align: center;
-    position: relative;
-}
+        70% {
+            background: url(3973.jpg);
+            transform: scale(1);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            object-fit: cover;
+        }
 
-.hero-content::after {
-    background-color: rgba(0, 0, 0, 0.65);
-    border-radius: 20px;
-    content: "";
-    position: absolute;
-    width: 250px;
-    height: 340px;
-    pointer-events: none;
-    z-index: -1;
-    transform: rotate(47deg);
-    top: 266px;
-    left: 465px;
-}
 
-.hero-welcome {
-    color: #dda15e;
-    font-style: italic;
-    font-size: 16px;
-    font-weight: 100;
-    position: relative;
-    top: 300px;
-}
+        80% {
+            background: url(2148395431\ \(3\).jpg);
+            transform: scale(1.2);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            object-fit: cover;
+        }
 
-.hero-title {
-    color: #fff;
-    font-size: 62px;
-    position: relative;
-    top: 300px;
-    margin-bottom: 8px;
-}
+        100% {
+            background: url(2148395431\ \(3\).jpg);
+            transform: scale(1);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            object-fit: cover;
+        }
+    }
 
-.hero-description {
-    color: rgba(255, 255, 255, 1);
-    position: relative;
-    top: 300px;
-    margin-bottom: 24px;
-    padding-bottom: 8px;
-    font-size: 20px;
-}
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
 
-.hero-btn-1 {
-    background: transparent;
-    color: #fff;
-    position: relative;
-    top: 300px;
-    margin-bottom: 8px;
-    padding: 8px 14px;
-    border-radius: 1000px;
-    font-weight: 600;
-    font-size: 15.5px;
-    transition: all 0.5s;
-    border: none;
-    cursor: pointer;
-}
+    .hero-content {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+    }
 
-.hero-btn-1:hover {
-    background-color: #fff;
-    color: #dda15e;
-}
+    .hero-content::after {
+        background-color: rgba(0, 0, 0, 0.65);
+        border-radius: 20px;
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 340px;
+        pointer-events: none;
+        z-index: -1;
+        top: 70%;
+        left: 50%;
+        transform: translate(-55%, -50%) rotate(47deg);
+    }
 
-.hero-btn-2 {
-    background: #b4752c;
-    color: #fff;
-    position: relative;
-    top: 300px;
-    margin-bottom: 8px;
-    padding: 8px 14px;
-    border-radius: 1000px;
-    font-weight: 600;
-    font-size: 15.5px;
-    transition: all 0.5s;
-    border: none;
-    cursor: pointer;
-}
+    .hero-welcome {
+        color: #dda15e;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 100;
+        position: relative;
+    }
 
-.hero-btn-2:hover {
-    background-color: #dda15e;
-}
+    .hero-title {
+        color: #fff;
+        font-size: 62px;
+        position: relative;
+        margin-bottom: 8px;
+    }
+
+    .hero-description {
+        color: rgba(255, 255, 255, 1);
+        position: relative;
+        margin-bottom: 24px;
+        padding-bottom: 8px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .hero-btn-1 {
+        background: transparent;
+        color: #fff;
+        position: relative;
+        margin-bottom: 8px;
+        padding: 12px 28px;
+        border-radius: 1000px;
+        font-weight: 400;
+        font-size: 16px;
+        transition: all 0.5s;
+        border: none;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+
+    .hero-btn-1:hover {
+        background-color: #fff;
+        color: #dda15e;
+    }
+
+    .hero-btn-2 {
+        background: #BC6C25;
+        color: #fff;
+        position: relative;
+        /* top: 55px; */
+        margin-top: 1px;
+        margin-left: 16px;
+        padding: 12px 28px;
+        border-radius: 1000px;
+        font-weight: 400;
+        font-size: 16px;
+        transition: all 0.5s;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .hero-btn-2:hover {
+        background-color: #dda15e;
+    }
+
+    /* --------------media-query--------- */
+    @media(max-width:1028px) {
+        .nav-container {
+            margin: 15px 30px;
+        }
+
+        @keyframes slid-change {
+            0% {
+                background: url(2335.jpg);
+                transform: scale(1);
+                overflow: hidden;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                object-fit: cover;
+            }
+
+            20% {
+                background: url(2335.jpg);
+                transform: scale(1.2);
+                overflow: hidden;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                object-fit: cover;
+            }
+
+
+            40% {
+                background: url(3973.jpg);
+                transform: scale(1);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                object-fit: cover;
+            }
+
+            60% {
+                background: url(3973.jpg);
+                transform: scale(1.2);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                object-fit: cover;
+            }
+
+
+            80% {
+                background: url(2148395431\ \(3\).jpg);
+                transform: scale(1);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                object-fit: cover;
+            }
+
+            100% {
+                background: url(2148395431\ \(3\).jpg);
+                transform: scale(1.2);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    @media(min-width:992px) {
+        .three-line {
+            display: none;
+        }
+
+    }
+
+    @media(max-width:992px) {
+        .nav-container {
+            margin: 0px 100px;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .nav-background {
+            height: auto;
+        }
+
+        .nav-bar {
+            padding: 10px;
+        }
+
+    }
+
+    @media(max-width:768px) {
+        .nav-container {
+            margin: 0px 10px;
+        }
+
+    }
+
+    @media(max-width:425px) {
+        .hero-content::after {
+            width: 200px;
+            height: 200px;
+            top: 55%;
+            left: 50%;
+            transform: translate(-55%, -50%) rotate(45deg);
+        }
+
+        .hero-title {
+            font-size: 38px;
+        }
+
+        .hero-btn-1 {
+            padding: 12px 15px;
+            margin-left: 0px;
+            font-size: 15px;
+        }
+
+        .hero-btn-2 {
+            padding: 12px 15px;
+            margin-left: 0px;
+            font-size: 15px;
+        }
+    }
