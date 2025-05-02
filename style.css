@@ -144,15 +144,13 @@
         height: 100vh;
         width: 100vw;
         overflow: hidden;
-        animation: slid-change 15s ease-out infinite;
-        z-index: -2;
+        animation: slid-change 12s linear infinite 0s;
     }
 
     @keyframes slid-change {
         0% {
             background: url(2335.jpg);
             transform: scale(1.2);
-            overflow: hidden;
             background-repeat: no-repeat;
             background-size: 100%;
             object-fit: cover;
@@ -161,14 +159,13 @@
         20% {
             background: url(2335.jpg);
             transform: scale(1);
-            overflow: hidden;
             background-repeat: no-repeat;
             background-size: 100%;
             object-fit: cover;
         }
 
 
-        50% {
+        40% {
             background: url(3973.jpg);
             transform: scale(1.2);
             background-repeat: no-repeat;
@@ -176,7 +173,7 @@
             object-fit: cover;
         }
 
-        70% {
+        60% {
             background: url(3973.jpg);
             transform: scale(1);
             background-repeat: no-repeat;
