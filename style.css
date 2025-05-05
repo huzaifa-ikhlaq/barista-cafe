@@ -306,7 +306,7 @@
 
         @keyframes slid-change {
             0% {
-                background: url(2335.jpg);
+                background: url(2335.webp);
                 transform: scale(1);
                 overflow: hidden;
                 background-repeat: no-repeat;
@@ -315,7 +315,7 @@
             }
 
             20% {
-                background: url(2335.jpg);
+                background: url(2335.webp);
                 transform: scale(1.2);
                 overflow: hidden;
                 background-repeat: no-repeat;
@@ -325,7 +325,7 @@
 
 
             40% {
-                background: url(3973.jpg);
+                background: url(3973.webp);
                 transform: scale(1);
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
@@ -333,7 +333,7 @@
             }
 
             60% {
-                background: url(3973.jpg);
+                background: url(3973.webp);
                 transform: scale(1.2);
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
@@ -342,7 +342,7 @@
 
 
             80% {
-                background: url(2148395431\ \(3\).jpg);
+                background: url(2148395431-_3_.webp);
                 transform: scale(1);
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
@@ -350,7 +350,7 @@
             }
 
             100% {
-                background: url(2148395431\ \(3\).jpg);
+                background: url(2148395431-_3_.webp);
                 transform: scale(1.2);
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
